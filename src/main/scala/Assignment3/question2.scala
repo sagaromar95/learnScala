@@ -11,9 +11,9 @@ every time.
 
 
 object question2 extends App {
-    def returnHighestAndLowest (f: (Int,Int) => Int,tuple : (Int,Int,Int)) : Int = {
-        println(tuple)
-        f(f(tuple._1,tuple._2),tuple._3)
+    def returnHighestAndLowest (f: (Int,Int) => Int,tup : (Int,Int,Int)) : Int = {
+        println(tup)
+        f(f(tup._1,tup._2),tup._3)
     }
 
    println(returnHighestAndLowest(math.max,Tuple3(util.Random.nextInt,util.Random.nextInt,util.Random.nextInt)))
